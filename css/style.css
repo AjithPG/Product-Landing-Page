@@ -8,8 +8,14 @@
             height: 48px;
             background-color: #fff;
             display: flex;
+            position: fixed;
+             top: 0;
+            left: 0;
+            width: 100%;
+            box-shadow: 0px 2px 8px #222222;
         }
 
+    
         #header-img {
             width: 30px;
             height: 30px;
@@ -43,6 +49,16 @@
         }
 
         /*section1*/
+        .top-container {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            margin: 10px auto;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px #54535329;
+            margin-top: 100px;
+        }
+
         .container {
             width: 90%;
             display: flex;
@@ -107,9 +123,79 @@
             height: 100%;
             width: 100%;
             position: absolute;
+
         }
 
-        footer {
-            width: 100%;
-            height: 100px;
-        }*/
+        #subscribe {
+            font-weight: 600;
+            color: #D50000;
+            text-align: center;
+            line-height: 20px;
+            padding: 10px;
+            font-size: 32px;
+        }
+
+        #para {
+            text-align: center;
+            font-weight: 500;
+        }
+
+        #form {
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        input {
+            transition: 0.1s;
+            border: none;
+        }
+
+        input:hover {
+            border-bottom: 2px solid #222222;
+        }
+
+        #email {
+            padding: 9px 20px;
+
+        }
+
+        #submit {
+            padding: 10px 20px;
+            background-color: #D50000;
+            border: none;
+            color: #ffffff;
+        }
+
+        @media only screen and (max-width:600px) {
+            #subscribe {
+                font-weight: 600;
+                color: #D50000;
+                text-align: center;
+                line-height: 20px;
+                padding: 10px;
+                font-size: 24px;
+            }
+
+            #form {
+                margin: 0 auto;
+                padding: 20px;
+                height: 100px;
+            }
+
+            #video {
+                overflow: hidden;
+                padding-bottom: 56.25%;
+                position: relative;
+                height: 0;
+            }
+
+            #video iframe {
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                z-index: 1;
+            }
+
+        }
